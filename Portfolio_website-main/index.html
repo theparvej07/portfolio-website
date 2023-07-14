@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>my profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="loader()">
+    <div id="Loading"></div>
+    <!-----start Hearder section----->
+    <div id="hearder" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="contenier">
+            <nav>
+                <img src="pic.jpg" alt="logo" class="logo" data-aos="zoom-in">
+                <ul id="sidmenu" data-aos="zoom-in">
+                    <li><a href="#hearder">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="hearder-text" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <p>Full Stack developer</p>
+                <h1>Hi I am <span>Parvej</span> <br> From India</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-----End Hearder section----->
+
+
+    <!-----start About section----->
+    <div id="about" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic.jpg" data-aos="zoom-in">
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A Final -year student in computer science and engineering. A future developer, that's me. Interning at the Sparks Foundation, I did web development. A few projects I worked on also helped me hone my coding abilities. I'm now honing
+                        my skills in preparation for my ambition to become a proficient programmer.I am currently Studying in JCT College of Engineering And Technology .</p>
+                    <div class="tab-titles" data-aos="fade-left">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
+                        <ul>
+                            <li><span>C++</span><br>Competitive programming</li>
+                            <li><span>Web Development</span><br> Web App development</li>
+                            <li><span>Digital Marketing</span><br>Promoting various organizations through social media</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - jun  </span><br>Full Stack infosys</li>
+                            <li><span>2022 - angular</span><br>infosys</li>
+                            <li><span>2023 - Networking Engineering</span><br>Cisco</li>
+                            <li><span>2023 - Python internship</span><br>YBI Foundation</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Computer science and Engineering</span><br>JCT college </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----End About section----->
+
+
+
+
+    <!-----Service section Start----->
+    <div id="services" data-aos="fade-up" data-aos-anchor-placement="top-center">
+        <div class="contenier">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div data-aos="fade-right">
+                    <img src="img/flag.png">
+                    <h2>Web Development</h2>
+                    <p>Creating websites from ideas.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="flip-up">
+                    <img src="img/pancel.png">
+                    <h2>Mobile app Design</h2>
+                    <p>Make people smile by developing Apps.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="img/grars.png">
+                    <h2>Digital Marketing</h2>
+                    <p>Be where the world is going.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!----services section end ----->
+
+
+    <!----portfolio section Start ----->
+
+    <div id="portfolio">
+        <div class="contenier">
+            <h1 class="sub-title">My Repositories</h1>
+            <p>Creative endeavours will reveal one's talent and commitment..</p>
+            <div class="work-list">
+                <div class="work" data-aos="zoom-in">
+                    <img src="img/Portfolio2.png">
+                    <div class="layer">
+                        <h3>Basic Banking Website</h3>
+                        <p>This website has been developed for an internship!</p>
+                        <a target="_blank" href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work" data-aos="zoom-in">
+                    <img src="img/Portfolio3.png">
+                    <div class="layer">
+                        <h3>Payment Gateway Integration</h3>
+                        <p>This website has been developed for an internship</p>
+                        <a target="_blank" href="http"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work" data-aos="zoom-in">
+                    <img src="img/Portfolio4.png">
+                    <div class="layer">
+                        <h3>Chatting Application</h3>
+                        <p>A clone of whatsapp which is created using java!</p>
+                        <a target="_blank" href="https"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+            <a href="http" class="btn">Learn More</a>
+
+        </div>
+    </div>
+    <!----portfolio section End ----->
+
+
+    <!----Contact section Start ----->
+    <div id="contact">
+        <div class="contenier">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-up-right">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>parvejansari0631@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>7050070458
+                    </p>
+                    <div class="social-icons" data-aos="zoom-in">
+
+                        <a target="_blank" class="instagram" href="htt"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a target="_blank" class="github" href="https:"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" class="linkedin" href="https:"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1a233vnOX6FQIsoyfgMGtkkCw2dAa5LSR/view" class="btn btn2">View Resume</a>
+
+                </div>
+                <div class="contact-right" data-aos="fade-up-left">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="massage" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright@ Parvej.<i class="fa-solid fa-heart"></i> website developed by parvej</p>
+        </div>
+    </div>
+
+    <!----Contact section End ----->
+    <script>
+        var preloader = document.getElementById("Loading");
+
+        function loader() {
+            preloader.style.display = 'none';
+        }
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+        });
+    </script>
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+
+        function openmenu() {
+            sidmenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidmenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
